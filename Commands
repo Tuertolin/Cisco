@@ -1,0 +1,11 @@
+#Connect throught Linux using SSH
+ssh -oKexAlgorithms=+diffie-hellman-group1-sha1 userAdmin@10.10.10.1
+
+#go into privileged mode
+enable
+
+#To display the configuration that is currently running on the adaptive security appliance, use the show running-config command in privileged EXEC mode.
+show running-config [all] [command]
+ https://supportforums.cisco.com/t5/network-infrastructure-documents/show-the-complete-configuration-without-breaks-pauses-on-cisco/ta-p/3115114#toc-hId--767781643
+ 
+ https://supportforums.cisco.com/t5/vpn/anyconnects-reconnecting-problem/td-p/2850760
