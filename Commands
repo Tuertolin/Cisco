@@ -7,5 +7,19 @@ enable
 #To display the configuration that is currently running on the adaptive security appliance, use the show running-config command in privileged EXEC mode.
 show running-config [all] [command]
  https://supportforums.cisco.com/t5/network-infrastructure-documents/show-the-complete-configuration-without-breaks-pauses-on-cisco/ta-p/3115114#toc-hId--767781643
- 
- https://supportforums.cisco.com/t5/vpn/anyconnects-reconnecting-problem/td-p/2850760
+
+1) pager : Sets the number of lines to display in a Telnet session before the "---more---" prompt. This command is saved to the configuration.
+
+2) terminal pager:Sets the number of lines to display in a Telnet session before the "---more---" prompt. This command is not saved to the configuration.
+
+The default is 24 lines; 0 means no page limit.
+
+1. Type "pager 0" in priviledged mode to set your terminal to display without any breaks.
+2. Type "show run-config" to display the config.
+3. Type "pager 20" in priviledged mode to set your terminal to display with breaks every 20 lines.
+term pager 0
+
+#Reconnecting issue
+https://supportforums.cisco.com/t5/vpn/anyconnects-reconnecting-problem/td-p/2850760
+
+
