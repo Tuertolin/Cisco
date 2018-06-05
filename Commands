@@ -22,4 +22,23 @@ term pager 0
 #Reconnecting issue
 https://supportforums.cisco.com/t5/vpn/anyconnects-reconnecting-problem/td-p/2850760
 
+#####################Change interface description #############################
+switch#enable
+switch#configure termina
+Enter configuration commands, one per line.  End with CNTL/Z.
+switch(config)#interface GigabitEthernet2/0/26
+switch(config-if)#description NewServer_Name
+switch(config-if)#end
+
+##################### VLAN Commands #############################
+
+switch# show vlan
+switch# show vlan name NameOfVLAN
+
+
+switch# config t
+Enter configuration commands, one per line.  End with CNTL/Z.
+switch(config)# interface Gi1/0/26
+switch(config-if)# switchport access vlan 5
+
 
