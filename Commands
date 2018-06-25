@@ -41,4 +41,8 @@ Enter configuration commands, one per line.  End with CNTL/Z.
 switch(config)# interface Gi1/0/26
 switch(config-if)# switchport access vlan 5
 
-
+##################### VPN Droping after 60 seconds #############################
+https://www.cisco.com/c/en/us/support/docs/security/anyconnect-secure-mobility-client/116881-technote-anyconnect-00.html
+switch(config)# show running-config all group-policy GroupPolicy_Name-Group 
+switch(config)# group-policy GroupPolicy_Name-Group attributes
+switch(config-group-webvpn)# anyconnect mtu 1300
